@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="jemo.webp" type="image/x-icon" />
+    <title>Jemo Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      :root {
+        --text-50: #050316;
+        --text-100: #0a062d;
+        --text-200: #140c5a;
+        --text-300: #1e1287;
+        --text-400: #2818b4;
+        --text-500: #321fe0;
+        --text-600: #5b4be7;
+        --text-700: #8478ed;
+        --text-800: #ada5f3;
+        --text-900: #d6d2f9;
+        --text-950: #eae9fc;
+
+        --background-50: #040218;
+        --background-100: #07042f;
+        --background-200: #0e075f;
+        --background-300: #160b8e;
+        --background-400: #1d0ebe;
+        --background-500: #2412ed;
+        --background-600: #5041f1;
+        --background-700: #7c71f4;
+        --background-800: #a7a0f8;
+        --background-900: #d3d0fb;
+        --background-950: #e9e7fd;
+
+        --primary-50: #040217;
+        --primary-100: #09052e;
+        --primary-200: #12095d;
+        --primary-300: #1a0e8b;
+        --primary-400: #2312ba;
+        --primary-500: #2c17e8;
+        --primary-600: #5645ed;
+        --primary-700: #8074f1;
+        --primary-800: #aba2f6;
+        --primary-900: #d5d1fa;
+        --primary-950: #eae8fd;
+
+        --secondary-50: #170206;
+        --secondary-100: #2e050c;
+        --secondary-200: #5d0919;
+        --secondary-300: #8b0e25;
+        --secondary-400: #ba1231;
+        --secondary-500: #e8173d;
+        --secondary-600: #ed4564;
+        --secondary-700: #f1748b;
+        --secondary-800: #f6a2b2;
+        --secondary-900: #fad1d8;
+        --secondary-950: #fde8ec;
+
+        --accent-50: #170a02;
+        --accent-100: #2e1505;
+        --accent-200: #5d2909;
+        --accent-300: #8b3e0e;
+        --accent-400: #ba5212;
+        --accent-500: #e86717;
+        --accent-600: #ed8545;
+        --accent-700: #f1a474;
+        --accent-800: #f6c2a2;
+        --accent-900: #fae1d1;
+        --accent-950: #fdf0e8;
+      }
+      @theme {
+        --color-text-50: var(--text-50);
+        --color-text-100: var(--text-100);
+        --color-text-200: var(--text-200);
+        --color-text-300: var(--text-300);
+        --color-text-400: var(--text-400);
+        --color-text-500: var(--text-500);
+        --color-text-600: var(--text-600);
+        --color-text-700: var(--text-700);
+        --color-text-800: var(--text-800);
+        --color-text-900: var(--text-900);
+        --color-text-950: var(--text-950);
+        --color-background-50: var(--background-50);
+        --color-background-100: var(--background-100);
+        --color-background-200: var(--background-200);
+        --color-background-300: var(--background-300);
+        --color-background-400: var(--background-400);
+        --color-background-500: var(--background-500);
+        --color-background-600: var(--background-600);
+        --color-background-700: var(--background-700);
+        --color-background-800: var(--background-800);
+        --color-background-900: var(--background-900);
+        --color-background-950: var(--background-950);
+        --color-primary-50: var(--primary-50);
+        --color-primary-100: var(--primary-100);
+        --color-primary-200: var(--primary-200);
+        --color-primary-300: var(--primary-300);
+        --color-primary-400: var(--primary-400);
+        --color-primary-500: var(--primary-500);
+        --color-primary-600: var(--primary-600);
+        --color-primary-700: var(--primary-700);
+        --color-primary-800: var(--primary-800);
+        --color-primary-900: var(--primary-900);
+        --color-primary-950: var(--primary-950);
+        --color-secondary-50: var(--secondary-50);
+        --color-secondary-100: var(--secondary-100);
+        --color-secondary-200: var(--secondary-200);
+        --color-secondary-300: var(--secondary-300);
+        --color-secondary-400: var(--secondary-400);
+        --color-secondary-500: var(--secondary-500);
+        --color-secondary-600: var(--secondary-600);
+        --color-secondary-700: var(--secondary-700);
+        --color-secondary-800: var(--secondary-800);
+        --color-secondary-900: var(--secondary-900);
+        --color-secondary-950: var(--secondary-950);
+        --color-accent-50: var(--accent-50);
+        --color-accent-100: var(--accent-100);
+        --color-accent-200: var(--accent-200);
+        --color-accent-300: var(--accent-300);
+        --color-accent-400: var(--accent-400);
+        --color-accent-500: var(--accent-500);
+        --color-accent-600: var(--accent-600);
+        --color-accent-700: var(--accent-700);
+        --color-accent-800: var(--accent-800);
+        --color-accent-900: var(--accent-900);
+        --color-accent-950: var(--accent-950);
+      }
+    </style>
+  </head>
+  <body class="bg-background-50 text-text-950 h-screen p-2 w-screen">
+    <div
+      class="bg-background-100 py-12 flex items-center justify-center flex-col m-3 rounded-xl"
+    >
+      <img
+        src="profile.webp"
+        class="w-48 h-70 rounded-xl shadow-lg"
+        alt="Profile Picture"
+      />
+      <h1 class="text-3xl font-bold mt-4 text-text-950">Hello, I'm Jeremy</h1>
+      <p class="text-lg mt-2 text-text-800 text-balance">
+        Passionate about coding and design
+      </p>
+    </div>
+
+    <div class="container mx-auto mt-8">
+      <nav class="flex justify-center flex-col space-y-6">
+        <a
+          href="https://www.twitter.com/JemoLife0213"
+          target="_blank"
+          class="text-secondary-500 p-4 rounded-xl bg-background-300 hover:text-primary-100 transition duration-300"
+        >
+          X
+        </a>
+        <a
+          href="https://www.snapchat.com/add/its_jemolife"
+          target="_blank"
+          class="text-secondary-500 p-4 rounded-xl bg-background-300 hover:text-primary-100 transition duration-300"
+        >
+          SnapChat
+        </a>
+        <a
+          href="https://www.github.com/yourprofile"
+          target="_blank"
+          class="text-secondary-500 p-4 rounded-xl bg-background-300 hover:text-primary-100 transition duration-300"
+        >
+          GitHub
+        </a>
+        <a
+          href="https://www.instagram.com/jemolife"
+          target="_blank"
+          class="text-secondary-500 p-4 rounded-xl bg-background-300 hover:text-primary-100 transition duration-300"
+        >
+          Instagram
+        </a>
+      </nav>
+    </div>
+
+    <section class="py-5">
+      <a
+        href="tel:+14436788236"
+        class="text-secondary-500 p-4 rounded-xl bg-background-300 hover:text-primary-100 transition duration-300"
+      >
+        Here is my number
+      </a>
+    </section>
+
+    <footer class="bg-background-100 text-center py-6 mt-12">
+      <p class="text-text-300">&copy; 2024 Jeremy. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
